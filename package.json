@@ -21,22 +21,9 @@
   "dependencies": {
     "exceljs": "latest",
     "hprose": "latest",
-    "joi": "latest",
-    "koa": "latest",
-    "koa-bodyparser": "latest",
-    "koa-router": "latest",
-    "koa-session": "latest",
-    "koa-static": "latest",
-    "mysql2": "latest",
-    "sequelize": "latest"
+    "joi": "latest"
   },
   "devDependencies": {
-    "@types/sequelize": "latest",
-    "@types/koa": "latest",
-    "@types/koa-bodyparser": "latest",
-    "@types/koa-router": "latest",
-    "@types/koa-session": "latest",
-    "@types/koa-static": "latest",
     "@types/node": "latest",
     "ts-node": "latest",
     "typescript": "latest"
