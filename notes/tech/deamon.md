@@ -2,6 +2,10 @@
 
 ### Shell script
 
+```sh
+nohup ./start >/dev/null 2>&1 &
+```
+
 - `start`
 
 ```sh
