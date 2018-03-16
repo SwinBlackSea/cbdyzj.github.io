@@ -17,12 +17,17 @@ java -jar main.jar $@
 
 ```sh
 #!/bin/sh
-pid=`ps -ef | grep main.jar | grep -v grep | awk '{print $2}'`
-if [ -n "$pid" ]
-then
-   echo "kill -9 的pid:" $pid
-   kill -9 $pid
-fi
+
+function kill_process() {
+    pid=`ps -ef | grep $1 | grep -v grep | awk '{print $2}'`
+    if [ -n "$pid" ]
+    then
+       echo "kill 的pid:" $pid
+       kill $pid
+    fi
+}
+
+kill_process 'main.jar'
 ```
 
 - `restart`
