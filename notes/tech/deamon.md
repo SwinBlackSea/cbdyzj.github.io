@@ -31,7 +31,7 @@ fi
 
 ### Systemd
 
-- main.service
+- `main.service`
 
 ```ini
 [Unit]
