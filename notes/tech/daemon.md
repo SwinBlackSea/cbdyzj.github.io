@@ -19,7 +19,7 @@ java -jar main.jar $@
 #!/bin/sh
 
 function kill_process() {
-    pid=`ps -ef | grep $1 | grep -v grep | awk '{print $2}'`
+    local pid=`ps -ef | grep $1 | grep -v grep | awk '{print $2}'`
     if [ -n "$pid" ]
     then
        echo "kill 的pid:" $pid
