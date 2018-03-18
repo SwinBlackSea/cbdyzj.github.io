@@ -38,6 +38,8 @@ kill_process 'main.jar'
 ./start
 ```
 
+- Use `$!` to get pid
+
 ### Systemd
 
 - `main.service`
