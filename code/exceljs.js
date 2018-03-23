@@ -13,6 +13,8 @@ async function main() {
     worksheet.eachRow(row => console.log(row.values))
 
     // await workbook.xlsx.writeFile('a.xlsx')
+    // response.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+    // response.setHeader('Content-Disposition', 'attachment;filename=' + 'a.xlsx')
 }
 
 if (require.main === module) {
