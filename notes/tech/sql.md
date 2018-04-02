@@ -1,8 +1,7 @@
 - 建库，删库
 
 ```mysql
-CREATE DATABASE 一个数据库;
-CREATE DATABASE 一个数据库 CHARACTER SET utf8;
+CREATE DATABASE 一个数据库 CHARACTER SET utf8mb4;
 DROP DATABASE 一个数据库;
 ```
 
