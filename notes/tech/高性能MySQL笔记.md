@@ -156,3 +156,43 @@
 
 - SQL导出：mysqldump、SELECT INTO OUTFILE等
 - 文件系统快照：ZFS、LVM快照
+
+### 执行计划
+
+#### EXPLAIN
+
+- EXPLAIN EXTENDED：增加filtered列，接`SHOW WARNINGS`可以看到生成的语句
+- EXPLAIN PARTITIONS：显示将访问的分区
+
+#### 解读
+
+- id：标识SELECT所属的行
+- select_type：查询类型
+  - SIMPLE：不包含子查询和UNION
+  - PRIMARY：查询中包含任何复杂的子部分
+  - SUBQUERY：子查询
+  - DERIVED：派生表
+  - UNION
+  - UNION RESULT
+  - （注意）SUBQUERY和UNION还可以被标记为DEPENDENT和UNCACHEABLE
+- table：表、子查询、UNION结果
+- type：关联类型
+  - ALL：全表扫描
+  - index：全表扫描（按索引）
+  - range：范围扫描
+  - ref：索引查找
+  - eq_ref：最多返回一个结果
+  - const：常量
+  - system：常量
+- possible_keys：查询可以使用哪些索引
+- key：MySQL决定采用哪个索引来优化对该表的访问
+- key_len：索引里使用的字节数
+- ref：key列索引中查找值所用的列或者常量
+- rows：为了找到所需的行而要读取的行数
+- filtered：针对表里符合某个条件（WHERE子句或联接条件）的记录的百分比所做的悲观估算
+- Extra：不适合在其他列显示的额外信息
+  - Usinf index：使用覆盖索引
+  - Using where：MySQL服务器将在储存引擎检索行后在进行过滤
+  - Using temporary：对查询结果排序时会使用一个临时表
+  - Using filesort：会对结果使用一个外部索引排序
+  - Range checked for each record (index map: N)：没有好用的索引，新的索引将在联接的每一行上重新估算
