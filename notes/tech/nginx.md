@@ -52,3 +52,13 @@ no content command in location
 - ngx_index: location /
 - ngx_autoindex: location pathname
 - ngx_static: location filename
+
+## conf
+
+```
+location / {
+        proxy_set_header   X-Real-IP $remote_addr;
+        proxy_set_header   Host      $http_host;
+        proxy_pass         http://127.0.0.1:3000;
+    }
+```
