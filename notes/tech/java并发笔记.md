@@ -75,6 +75,60 @@ public enum State {
 - 有序性
 - 不能替代锁，无法保证符合操作原子性
 
-### 线程组
+#### 线程相关
+
+- 线程组（ThreadGroup）
+  - activeCount()：活动线程估计
+  - list()：线程列表
+- 守护线程（Daemon）
+  - 其他线程退出，只有守护线程时，守护线程自动退出
+- 线程优先级
+  - 使用1-10表示优先级
+- synchronized
+  - 指定加锁对象
+  - 直接作用于实例方法：给当前实例加锁
+  - 直接作用于静态方法：给当前类加锁
+  - 保证线程安全，可见性，有序性
+
+
+### 并发包
+
+- 重入锁（ReentrantLock）
+  - Condition
+- 信号量（Semaphore）
+- 读写锁（ReadWriteLock）
+- 倒计时器（CountDownLatch）
+- 循环栅栏（CyclicBarrier）
+- 线程阻塞工具类（LockSupport）
+- 线程池
+  - Executors
+  - Executor
+  - ThreadPoolExecutor
+  - ExecutorService
+- Fork/Join框架
+- 并发容器
+  - ConcurrentHashMap
+  - CopyOnWriteArrayList
+  - ConcurrentLinkedQueue
+  - BlockingQueue
+  - ConcurrentSkipListMap
+  - Collections包装线程安全的集合
+
+### 锁的优化及注意事项
+
+- 减少锁持有时间
+- 减少锁颗粒度
+- 读写分离锁替换独占锁
+- 锁分离
+- 锁粗化
+
+#### Java虚拟机的锁优化
+
+- 锁偏向
+- 轻量级锁
+- 自旋锁
+- 锁消除
+
+#### ThreadLocal
 
 - ​
