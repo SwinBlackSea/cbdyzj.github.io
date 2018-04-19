@@ -131,4 +131,38 @@ public enum State {
 
 #### ThreadLocal
 
-- ​
+- 线程变量
+
+### 比较交换（CAS）
+
+- atomic包：内置使用CAS操作的线程安全的类型
+  - AtomicInteger
+  - AtomicReference
+  - AtomicReferenceArray
+  - AtomicStampedReference
+  - AtomicIntegerArray
+  - AtomicIntegerFieldUpdater
+- SynchronousQueue
+
+### 并行模式与算法
+
+- 单例模式
+- 不变模式
+- 生产者、消费者模式
+- 无锁的缓存框架：Disruptor
+- Future模式
+- 网络NOI，AIO
+
+### Java8与并发
+
+- Lambda表达式
+- CompletableFuture
+- StampedLock
+- CLH锁
+- 原子类增强
+  - LongAddr
+  - LongAccumulator
+
+### Akka
+
+- Actor模型
