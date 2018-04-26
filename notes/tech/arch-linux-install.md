@@ -63,6 +63,7 @@ systemctl enable dhcpcd
 # 添加新用户
 useradd -m -g users -s /bin/bash cbdyzj
 passwd cbdyzj
+usermod -aG wheel cbdyzj
 
 # 添加到sudo
 visudo
