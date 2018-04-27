@@ -8,30 +8,30 @@ DROP DATABASE test_db;
 - 建表，删表
 
 ```mysql
-CREATE TABLE 一个表 (
-  列一 INT,
-  列二 INT
+CREATE TABLE test_table (
+  column1 INT,
+  column2 INT
 );
 
-DROP TABLE 一个表;
+DROP TABLE test_table;
 ```
 
 - 增，删，改，查
 
 ```mysql
-INSERT 一个表 (列一, 列二) VALUE (1, 2);
-INSERT 一个表 (列一, 列二) VALUES (2, 3), (4, 5);
+INSERT test_table (column1, column2) VALUE (1, 2);
+INSERT test_table (column1, column2) VALUES (2, 3), (4, 5);
 
-DELETE FROM 一个表
-WHERE 列一 = 1;
+DELETE FROM test_table
+WHERE column1 = 1;
 
-UPDATE 一个表
-SET 列二 = 4
-WHERE 列一 = 2；
+UPDATE test_table
+SET column2 = 4
+WHERE column1 = 2；
 
-SELECT * FROM 一个表;
+SELECT * FROM test_table;
 
-TRUNCATE TABLE 一个表; 
+TRUNCATE TABLE test_table; 
 ```
 
 - 数据类型
