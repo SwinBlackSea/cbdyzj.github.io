@@ -17,7 +17,7 @@ diskutil eject /dev/diskx
 ## dock
 
 ```shell
-defaults write com.apple.dock ResetLaunchPad -bool TRUE; killall Dock
+defaults write com.apple.dock ResetLaunchPad -bool TRUE && killall Dock
 ```
 
 ## 微信的bug，删除微信的缓存
