@@ -8,6 +8,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'cbdyzj'@'%' IDENTIFIED BY 'password';
 GRANT SELECT, INSERT ON *.* TO 'cbdyzj'@'localhost';
 # 撤销权限
 REVOKE INSERT ON *.* FROM 'cbdyzj'@'localhost';
+REVOKE GRANT OPTION ON *.* FROM 'cbdyzj';
 # 查看权限
 SHOW GRANTS;
 SHOW GRANTS FOR 'cbdyzj';
