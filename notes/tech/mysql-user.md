@@ -9,6 +9,7 @@ GRANT SELECT, INSERT ON *.* TO 'cbdyzj'@'localhost';
 # 撤销权限
 REVOKE INSERT ON *.* FROM 'cbdyzj'@'localhost';
 # 查看权限
+SHOW GRANTS;
 SHOW GRANTS FOR 'cbdyzj';
 SHOW GRANTS FOR 'cbdyzj'@'localhost';
 # 修改密码
