@@ -1,6 +1,6 @@
 ### Auto Index
 
-```
+```nginx
 location / {
     root   /usr/share/nginx/html/regulations;
     autoindex on;
@@ -13,7 +13,7 @@ location / {
 
 ### Proxy
 
-```
+```nginx
 location / {
         proxy_set_header    X-Real-IP   $remote_addr;
         proxy_set_header    Host        $http_host;
@@ -23,7 +23,7 @@ location / {
 
 ### Virtual Host
 
-```
+```nginx
 server {  
         listen      80;  
         server_name foo.jianzhao.org;
