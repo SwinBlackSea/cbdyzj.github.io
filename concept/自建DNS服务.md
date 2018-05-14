@@ -1,4 +1,0 @@
-- Unbound
-- dnsmasq
-- MaraDNS
-- PowerDNS

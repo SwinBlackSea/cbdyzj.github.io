@@ -1,5 +1,5 @@
 /**
- * log4js，类似与Java的log4j
+ * log4js，类似Java的log4j
  */
 const log4js = require('log4js')
 
