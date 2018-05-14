@@ -1,4 +1,4 @@
-# emacs concept
+# Emacs
 
 - 快速教程：c-h t
 - mac meta按键：option按键

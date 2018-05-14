@@ -25,4 +25,3 @@ $ usermod -aG wheel cbdyzj
 ```shell
 $ vi /etc/motd
 ```
-

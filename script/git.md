@@ -1,4 +1,4 @@
-# git usage
+# git
 
 ```shell
 $ git merge --squash # 合并代码

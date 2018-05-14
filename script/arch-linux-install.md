@@ -1,4 +1,4 @@
-## 安装基础系统
+## Arch Linux
 
 ```shell
 # 检查启动模式
@@ -55,11 +55,9 @@ reboot
 
 # 启动dhcp  
 systemctl enable dhcpcd
-```
 
-## 用户管理
+# 用户管理
 
-```shell
 # 添加新用户
 useradd -m -g users -s /bin/bash cbdyzj
 passwd cbdyzj
@@ -67,11 +65,9 @@ usermod -aG wheel cbdyzj
 
 # 添加到sudo
 visudo
-```
 
-## 安装X
+# 安装X
 
-```shell
 # 检查显卡
 lspci | grep VGA
 
@@ -96,11 +92,9 @@ pacman -S gnome-tweak-tool
 
 # 开启服务
 systemctl enable  gdm
-```
 
-## Pacman
+# Pacman
 
-```shell
 # 滚动更新
 pacman -Syu
 
