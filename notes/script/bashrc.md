@@ -17,10 +17,6 @@ alias tnpm='npm --registry=http://registry.npm.taobao.org'
 alias convert-gb='iconv -f gb18030'
 alias du0='du -hd0'
 
-# nvm optional
-alias nvm_init='. "/usr/local/opt/nvm/nvm.sh"'
-alias node6='nvm_init && nvm use --delete-prefix 6'
-alias node0='nvm_init && nvm use --delete-prefix 0.12'
 ```
 
 ## .gitconfig

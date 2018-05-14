@@ -1,3 +1,13 @@
+### Compile and install
+
+```shell
+# dependence: zlib, pcre, openssl
+./configure
+# ./configure --help
+make
+make install
+```
+
 ### Auto Index
 
 ```nginx

@@ -6,7 +6,6 @@
 ## 模块化策略
 
 ```javascript
-// 形成闭包
 (function(exports, require, module, __filename, __dirname) {})
 ```
 
