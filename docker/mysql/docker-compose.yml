@@ -9,9 +9,14 @@ services:
       - MYSQL_ROOT_PASSWORD=password
     volumes:
       - mysql-data:/var/lib/mysql
+    command: [
+      "--log-bin=mysql-bin",
+      "--server-id=1"
+    ]
 volumes:
   mysql-data:
 networks:
   default:
     external:
       name: docker-network
+      

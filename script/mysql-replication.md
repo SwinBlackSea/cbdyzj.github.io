@@ -1,0 +1,16 @@
+```mysql
+-- 创建复制账号
+GRANT REPLICATION SLAVE ,REPLICATION CLIENT ON *.* TO 'repl'@'%' IDENTIFIED BY 'password';
+-- 查看是否启用二进制日志
+SHOW MASTER STATUS;
+-- 配置复制
+CHANGE MASTER TO
+MASTER_HOST ='master0',
+MASTER_PORT =3306,
+MASTER_USER = 'repl',
+MASTER_PASSWORD ='password',
+MASTER_LOG_FILE ='master-bin.000001',
+MASTER_LOG_POS =100;
+-- 查看从库
+SHOW SLAVE STATUS;
+```

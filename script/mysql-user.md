@@ -3,6 +3,8 @@
 ```mysql
 # 创建用户
 CREATE USER 'cbdyzj'@'localhost' IDENTIFIED BY 'password';
+# 删除用户
+DROP USER 'cbdyzj'@'%';
 # 授予权限
 GRANT ALL PRIVILEGES ON *.* TO 'cbdyzj'@'%' IDENTIFIED BY 'password';
 GRANT SELECT, INSERT ON *.* TO 'cbdyzj'@'localhost';
