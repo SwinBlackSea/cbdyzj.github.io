@@ -48,3 +48,11 @@ server {
         }          
 } 
 ```
+
+### Redirect
+
+```
+location /foo {
+     rewrite ^/(.*) http://jianzhao.org/bar redirect;
+}
+```
