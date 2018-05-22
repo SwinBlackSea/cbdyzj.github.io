@@ -50,6 +50,6 @@ no content command in location
 
 ## Rewrite
 
-```
+```nginx
 rewrite regex replacement [flag];
 ```
