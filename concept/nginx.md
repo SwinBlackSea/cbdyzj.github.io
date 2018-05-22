@@ -42,3 +42,14 @@ no content command in location
 - ngx_index: location /
 - ngx_autoindex: location pathname
 - ngx_static: location filename
+
+## Nginx Proxy
+
+1. 如果URI与地址一起指定，它会替换与location参数匹配的请求URI部分
+2. 如果指定的地址没有URI，或者无法确定要替换的URI部分，则传递完整的请求URI（可能已修改）
+
+## Rewrite
+
+```
+rewrite regex replacement [flag];
+```
