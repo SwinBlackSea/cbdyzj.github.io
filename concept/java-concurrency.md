@@ -100,6 +100,7 @@ public enum State {
 - 倒计时器（CountDownLatch）
 - 循环栅栏（CyclicBarrier）
 - 线程阻塞工具类（LockSupport）
+- AbstractQueuedSynchronizer
 - 线程池
   - Executors
   - Executor
