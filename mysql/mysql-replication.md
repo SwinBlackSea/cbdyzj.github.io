@@ -14,3 +14,24 @@ MASTER_LOG_POS =100;
 -- 查看从库
 SHOW SLAVE STATUS;
 ```
+
+## my.cnf
+
+```ini
+# master
+server_id = 1
+log-bin = mysql-bin
+binlog-do-db = lng2
+binlog-ignore-db = mysql
+
+# slave
+log-bin=mysql-bin
+server-id=2
+master-host=localhost
+master-user=root
+master-password=password
+master-port=3306
+
+replicate-do-db=test
+replicate-ignore-db=mysql
+```
