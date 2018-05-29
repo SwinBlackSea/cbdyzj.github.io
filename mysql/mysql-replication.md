@@ -21,17 +21,15 @@ SHOW SLAVE STATUS;
 # master
 server_id = 1
 log-bin = mysql-bin
-binlog-do-db = lng2
+binlog-do-db = test
 binlog-ignore-db = mysql
 
 # slave
-log-bin=mysql-bin
-server-id=2
-master-host=localhost
-master-user=root
-master-password=password
-master-port=3306
+server-id = 2
+log-bin = mysql-bin
+binlog-do-db = test
+binlog-ignore-db = mysql
 
-replicate-do-db=test
-replicate-ignore-db=mysql
+replicate-do-db = test
+replicate-ignore-db = mysql
 ```
