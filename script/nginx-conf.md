@@ -1,7 +1,7 @@
 ### Compile and install
 
-```shell
-# dependence: zlib, pcre, openssl
+```sh
+# dependencies: zlib, pcre, openssl
 ./configure
 # ./configure --help
 make
