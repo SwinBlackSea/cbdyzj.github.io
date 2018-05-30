@@ -3,8 +3,8 @@
 - Docker相关整理
 - 统一使用一个桥接网络
 
-```
-$ docker network create docker-network
+```sh
+docker network create docker-network
 ```
 
 ## MacOS
@@ -13,4 +13,10 @@ $ docker network create docker-network
 
 ```
 ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+```
+
+## Usage
+
+```
+docker rmi $(docker images -qf dangling=true)
 ```
