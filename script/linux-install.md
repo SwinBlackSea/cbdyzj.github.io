@@ -1,6 +1,6 @@
-## Arch Linux
+## Linux install
 
-```shell
+```sh
 # 检查启动模式
 efivar -l
 ls /sys/firmware/efi/efivars
@@ -106,4 +106,32 @@ pacman -R
 
 # 已安装软件包
 pacman -Q
+```
+
+- DNS
+
+```shell
+$ vi /etc/resolv.conf
+nameserver 1.1.1.1
+nameserver 1.0.0.1
+```
+
+- Time
+
+```sh
+$ crontab -e
+00 10 * * * /usr/sbin/ntpdate -u cn.pool.ntp.org > /dev/null 2>&1; /sbin/hwclock -w
+```
+
+- User
+
+```sh
+$ useradd -m -g users -s /bin/bash cbdyzj
+$ usermod -aG wheel cbdyzj
+```
+
+- Message of today
+
+```sh
+$ vi /etc/motd
 ```
