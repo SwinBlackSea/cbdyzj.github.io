@@ -111,7 +111,7 @@ pacman -Q
 - DNS
 
 ```shell
-$ vi /etc/resolv.conf
+vi /etc/resolv.conf
 nameserver 1.1.1.1
 nameserver 1.0.0.1
 ```
@@ -119,19 +119,23 @@ nameserver 1.0.0.1
 - Time
 
 ```sh
-$ crontab -e
+# crontab
+crontab -e
 00 10 * * * /usr/sbin/ntpdate -u cn.pool.ntp.org > /dev/null 2>&1; /sbin/hwclock -w
+# ntpd
+ntpd start
+vi /etc/ntp.conf
 ```
 
 - User
 
 ```sh
-$ useradd -m -g users -s /bin/bash cbdyzj
-$ usermod -aG wheel cbdyzj
+useradd -m -g users -s /bin/bash cbdyzj
+usermod -aG wheel cbdyzj
 ```
 
 - Message of today
 
 ```sh
-$ vi /etc/motd
+vi /etc/motd
 ```
