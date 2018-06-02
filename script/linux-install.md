@@ -123,8 +123,11 @@ nameserver 1.0.0.1
 crontab -e
 00 10 * * * /usr/sbin/ntpdate -u cn.pool.ntp.org > /dev/null 2>&1; /sbin/hwclock -w
 # ntpd
-ntpd start
-vi /etc/ntp.conf
+systemdctl start ntpd 
+# chronyd
+systemdctl start chronyd
+# systemd-timesyncd
+timedatectl set-ntp true
 ```
 
 - User
