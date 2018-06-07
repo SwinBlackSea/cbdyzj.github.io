@@ -8,8 +8,11 @@
 - 光标向后移动一个字符：`CTRL-F`
 - 退格：`CTRL-H`
 - 删除一个单词：`CTRL-W`
-- 删除行：`CTRL-U`
+- 删除光标前行：`CTRL-U`
+- 删除光标后行：`CTRL-K`
 - 撤回上面两个操作：`CTRL-Y`
+- 向前删除字符：`CTRL-H`
+- 向后删除字符：`CTRL-D`
 - 文件结尾EOF：`CTRL-D`
 - 清屏：`CTRL-L`
 - 回车：`CTRL-M`，`CTRL-J`
