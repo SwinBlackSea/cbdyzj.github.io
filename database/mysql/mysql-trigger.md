@@ -1,3 +1,6 @@
+# 触发器
+
+```mysql
 CREATE TABLE foo_backup
   LIKE foo;
 
@@ -11,4 +14,4 @@ CREATE TRIGGER foo_delete_backup
       FROM foo
       WHERE foo.id = old.id;
   END;
-
+```
