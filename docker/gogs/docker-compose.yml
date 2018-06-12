@@ -7,9 +7,9 @@ services:
       - '10080:3000'
       - '10022:22'
     volumes:
-      - gogs-data:/data
+      - data:/data
 volumes:
-  gogs-data:
+  data:
 networks:
   default:
     external:

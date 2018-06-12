@@ -8,9 +8,9 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=password
     volumes:
-      - mariadb-data:/var/lib/mysql
+      - data:/var/lib/mysql
 volumes:
-  mysql-data:
+  data:
 networks:
   default:
     external:

@@ -10,9 +10,9 @@ services:
       - RABBITMQ_DEFAULT_USER=username
       - RABBITMQ_DEFAULT_PASS=password
     volumes:
-      - rabbitmq-data:/var/lib/rabbitmq
+      - data:/var/lib/rabbitmq
 volumes:
-  rabbitmq-data:
+  data:
 networks:
   default:
     external:

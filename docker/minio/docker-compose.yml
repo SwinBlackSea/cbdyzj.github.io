@@ -4,7 +4,7 @@ services:
     image: minio/minio
     container_name: minio
     volumes:
-      - minio-data:/data
+      - data:/data
     ports:
       - '9000:9000'
     environment:
@@ -12,7 +12,7 @@ services:
       MINIO_SECRET_KEY: secret_key
     command: server /data
 volumes:
-  minio-data:
+  data:
 networks:
   default:
     external:

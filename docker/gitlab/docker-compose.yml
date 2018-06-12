@@ -10,16 +10,16 @@ services:
         gitlab_rails['gitlab_shell_ssh_port'] = 9722
         # Add any other gitlab.rb configuration here, each on its own line
     volumes:
-      - gitlab-etc:/etc/gitlab
-      - gitlab-log:/var/log/gitlab
-      - gitlab-data:/var/opt/gitlab
+      - etc:/etc/gitlab
+      - log:/var/log/gitlab
+      - data:/var/opt/gitlab
     ports:
       - '9780:9780'
       - '9722:22'
 volumes:
-  gitlab-etc:
-  gitlab-log:
-  gitlab-data:
+  etc:
+  log:
+  data:
 networks:
   default:
     external:
