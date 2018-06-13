@@ -1,6 +1,6 @@
 version: '3'
 services:
-  gitlab:
+  activemq:
     image: webcenter/activemq
     container_name: activemq
     volumes:
