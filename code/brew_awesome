@@ -1,8 +1,24 @@
 #!/bin/sh
-brew install node tree maven gradle 
 
-brew cask install \
-java qq google-chrome firefox webstorm intellij-idea docker postman \
-visual-studio-code iina dingtalk typora
+# brew
+brew install node
+brew install tree
+brew install maven
+brew install gradle 
 
+# brew cask
+brew cask install java
+brew cask install qq
+brew cask install google-chrome
+brew cask install firefox
+brew cask install webstorm
+brew cask install intellij-idea
+brew cask install docker
+brew cask install postman
+brew cask install visual-studio-code
+brew cask install iina
+brew cask install dingtalk
+brew cask install typora
+
+# clean
 brew cleanup && brew cask cleanup
