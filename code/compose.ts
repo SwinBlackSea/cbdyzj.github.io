@@ -1,8 +1,8 @@
-export type Ware = (ctx: any, next: () => any) => any
+export type Middleware = (ctx: any, nxt: () => any) => any
 
-export function compose(wares: Ware[]) {
-    if (wares.length === 1) {
-        return ctx => wares[0](ctx, () => ctx)
+export function compose(middlewares: Middleware[]) {
+    if (!middlewares || !middlewares.length) {
+        return ctx => ctx
     }
-    return ctx => wares[0](ctx, () => compose(wares.slice(1))(ctx))
+    return ctx => middlewares[0](ctx, () => compose(middlewares.slice(1))(ctx))
 }
