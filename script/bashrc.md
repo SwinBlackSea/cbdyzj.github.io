@@ -29,9 +29,6 @@ PS1='%n@ %~ '$'\n''$ '
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # brew install zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# brew install zsh-git-prompt
-source /usr/local/opt/zsh-git-prompt/zshrc.sh
-
 ```
 
 ## .gitconfig
