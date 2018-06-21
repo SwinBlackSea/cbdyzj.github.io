@@ -1,6 +1,6 @@
 ## .bash_profile
 
-```shell
+```sh
 # shell prompt
 PS1='\u@ \w\n$ '
 
@@ -16,6 +16,21 @@ alias brew-up='brew update && brew upgrade && brew cleanup'
 alias tnpm='npm --registry=http://registry.npm.taobao.org'
 alias convert-gb='iconv -f gb18030'
 alias du0='du -hd0'
+
+```
+
+## .zshrc
+
+```sh
+# shell prompt
+PS1='%n@ %~ '$'\n''$ '
+
+# brew install zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# brew install zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# brew install zsh-git-prompt
+source /usr/local/opt/zsh-git-prompt/zshrc.sh
 
 ```
 
