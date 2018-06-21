@@ -1,6 +1,7 @@
 # git
 
 ```sh
+git remote prune origin # 清理本地分支
 git stash # 储藏
 git merge --squash # 合并代码
 git rebase --interactive # 交互变基
