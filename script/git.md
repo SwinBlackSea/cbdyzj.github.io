@@ -1,6 +1,7 @@
 # git
 
 ```sh
+git clean -xdf # 清理文件
 git remote prune origin # 清理本地分支
 git stash # 储藏
 git merge --squash # 合并代码
