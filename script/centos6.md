@@ -1,5 +1,5 @@
 
-```shell
+```sh
 # iptables
 /etc/init.d/iptables status
 /etc/init.d/iptables stop
