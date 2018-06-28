@@ -1,5 +1,7 @@
-#!/usr/bin/env python
+## 1
 
+```python
 t = ([], [])
 t[0] += [1]
 print(t)
+```
