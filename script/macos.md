@@ -1,6 +1,6 @@
 ## dd
 
-```shell
+```sh
 # 查看设备
 diskutil list
 
@@ -16,7 +16,7 @@ diskutil eject /dev/diskx
 
 ## dock
 
-```shell
+```sh
 defaults write com.apple.dock ResetLaunchPad -bool TRUE && killall Dock
 ```
 

@@ -2,38 +2,38 @@
 
 - 安装firefox
 
-```shell
+```sh
 $ brew cask install firefox
 ```
 
 - 安装Java
 
-```shell
+```sh
 $ brew cask install java
 ```
 
 - 安装selenium-server-standalone（可选）
 
-```shell
+```sh
 $ brew install selenium-server-standalone
 ```
 
 - 安装浏览器驱动
 
-```shell
+```sh
 # 火狐浏览器驱动
 $ brew install geckodriver
 ```
 
 - 安装node的依赖
 
-```shell
+```sh
 $ npm i -D selenium-webdriver
 ```
 
 - 启动火狐浏览器驱动
 
-```shell
+```sh
 $ geckodriver
 ```
 

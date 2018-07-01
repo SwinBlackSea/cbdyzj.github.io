@@ -1,6 +1,6 @@
 ## 语法
 
-```shell
+```sh
 crontab [ -u user ] file
 crontab [ -u user ] { -l | -r | -e }
 ```

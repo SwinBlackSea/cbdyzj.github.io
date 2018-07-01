@@ -1,12 +1,12 @@
 ### 得到key.der
 
-```shell
+```sh
 $ echo $keybase64d | base64 -D > key.der
 ```
 
 ### 转化der到pem
 
-```shell
+```sh
 $ openssl rsa -pubin -in key.der -inform DER -out key.pem -outform PEM
 ```
 

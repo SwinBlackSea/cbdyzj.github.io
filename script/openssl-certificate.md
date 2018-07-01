@@ -2,26 +2,26 @@
 
 1. 生成私钥
 
-```shell
+```sh
 $ openssl genrsa -des3 -out server.key 2048
 ```
 
 2. ​生成CSR（证书签名请求）
 
-```shell
+```sh
 $ openssl req -new -key server.key -out server.csr
 ```
 
 3. 删除私钥中的密码
 
-```shell
+```sh
 $ cp server.key server.key.org
 $ openssl rsa -in server.key.org -out server.key
 ```
 
 4. 自签名
 
-```shell
+```sh
 $ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 ```
 

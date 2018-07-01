@@ -5,7 +5,7 @@
 - id：主键
 - document：文档
 
-```shell
+```sh
 # docker启动
 sudo docker run -d -p 9200:9200 -p 9300:9300 elasticsearch
 

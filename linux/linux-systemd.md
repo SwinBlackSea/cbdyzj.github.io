@@ -1,6 +1,6 @@
 ## systemctl
 
-```shell
+```sh
 # 重启系统
 sudo systemctl reboot
 
@@ -25,7 +25,7 @@ sudo systemctl rescue
 
 ## systemd-analyze
 
-```shell
+```sh
 # 查看启动耗时
 systemd-analyze                                                                                       
 
@@ -40,7 +40,7 @@ systemd-analyze critical-chain atd.service
 ```
 ## hostnamectl
 
-```shell
+```sh
 # 显示当前主机的信息
 hostnamectl
 
@@ -50,7 +50,7 @@ sudo hostnamectl set-hostname rhel7
 
 ## localectl
 
-```shell
+```sh
 # 查看本地化设置
 localectl
 
@@ -61,7 +61,7 @@ sudo localectl set-keymap en_GB
 
 ## timedatectl
 
-```shell
+```sh
 # 查看当前时区设置
 timedatectl
 
@@ -76,7 +76,7 @@ sudo timedatectl set-time HH:MM:SS
 
 ## loginctl
 
-```shell
+```sh
 # 列出当前session
 loginctl list-sessions
 
@@ -102,7 +102,7 @@ loginctl show-user cbdyzj
 - Swap Unit：swap 文件
 - Timer Unit：定时器
 
-```shell
+```sh
 # 列出正在运行的 Unit
 systemctl list-units
 
@@ -176,7 +176,7 @@ Systemd 默认从目录`/etc/systemd/system/`读取配置文件。但是，里�
 
 ### 配置文件状态
 
-```shell
+```sh
 # 列出所有配置文件
 systemctl list-unit-files
 
@@ -192,7 +192,7 @@ systemctl list-unit-files --type=service
 
 ### 配置文件格式
 
-```shell
+```sh
 # 查看配置文件的内容
 systemctl cat sshd.socket
 ```
@@ -239,7 +239,7 @@ systemctl cat sshd.socket
 
 ### Target
 
-```shell
+```sh
 # 查看当前系统的所有 Target
 systemctl list-unit-files --type=target
 
@@ -260,7 +260,7 @@ sudo systemctl isolate multi-user.target
 
 ## 日志管理
 
-```shell
+```sh
 # 查看所有日志（默认情况下 ，只保存本次启动的日志）
 sudo journalctl
 

@@ -2,6 +2,6 @@
 
 - reload nginx.conf
 
-```shell
+```sh
 docker exec nginx nginx -s reload
 ```

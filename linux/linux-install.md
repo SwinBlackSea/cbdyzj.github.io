@@ -110,7 +110,7 @@ pacman -Q
 
 - DNS
 
-```shell
+```sh
 vi /etc/resolv.conf
 nameserver 1.1.1.1
 nameserver 1.0.0.1

@@ -1,4 +1,4 @@
-```shell
+```sh
 gdisk
 fdisk
 cfdisk
