@@ -3,8 +3,6 @@
 # brew
 brew install node
 brew install tree
-brew install maven
-brew install gradle 
 
 # brew cask
 brew cask install java
@@ -19,6 +17,9 @@ brew cask install visual-studio-code
 brew cask install iina
 brew cask install dingtalk
 brew cask install typora
+brew cask install shadowsocksx-ng
+brew cask install wechat
+brew cask install qqmusic
 
 # clean
 brew cleanup && brew cask cleanup

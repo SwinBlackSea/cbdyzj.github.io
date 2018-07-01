@@ -9,10 +9,9 @@
 - maven.compiler.target
 - encoding：project.build.sourceEncoding
 
-### Demo
+### Deploy
 
-```shell
-# deploy
+```sh
 mvn deploy:deploy-file \
 -DgroupId=org.jianzhao \
 -DartifactId=j \

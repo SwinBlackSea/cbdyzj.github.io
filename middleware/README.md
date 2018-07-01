@@ -1,7 +1,0 @@
-- Apache Hive
-- HBase
-- Elasticsearch
-- MongoDB
-- OpenTSDB
-- HDFS
-- Neo4j
