@@ -9,4 +9,3 @@ $ echo $keybase64d | base64 -D > key.der
 ```sh
 $ openssl rsa -pubin -in key.der -inform DER -out key.pem -outform PEM
 ```
-

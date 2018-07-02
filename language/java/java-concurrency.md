@@ -32,7 +32,7 @@
 
 - 线程状态
 
-```Java
+```java
 public enum State {
     NEW,
     RUNNABLE,

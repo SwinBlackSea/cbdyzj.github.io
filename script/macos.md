@@ -23,5 +23,5 @@ defaults write com.apple.dock ResetLaunchPad -bool TRUE && killall Dock
 ## 微信的bug，删除微信的缓存
 
 ```
- rm -rf ~/Library/Containers/com.tencent.xinWeChat
+rm -rf ~/Library/Containers/com.tencent.xinWeChat
 ```

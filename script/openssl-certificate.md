@@ -3,31 +3,31 @@
 1. 生成私钥
 
 ```sh
-$ openssl genrsa -des3 -out server.key 2048
+openssl genrsa -des3 -out server.key 2048
 ```
 
 2. ​生成CSR（证书签名请求）
 
 ```sh
-$ openssl req -new -key server.key -out server.csr
+openssl req -new -key server.key -out server.csr
 ```
 
 3. 删除私钥中的密码
 
 ```sh
-$ cp server.key server.key.org
-$ openssl rsa -in server.key.org -out server.key
+cp server.key server.key.org
+openssl rsa -in server.key.org -out server.key
 ```
 
 4. 自签名
 
 ```sh
-$ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 ```
 
 5. 安装私钥和证书
 
-   需要server.key、server.crt
+需要server.key、server.crt
 
 
 ## 说明

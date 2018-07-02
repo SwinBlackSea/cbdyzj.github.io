@@ -13,11 +13,11 @@
 
 ```sh
 mvn deploy:deploy-file \
--DgroupId=org.jianzhao \
--DartifactId=j \
--Dversion=0.1 \
--Dpackaging=jar \
--Dfile=j.jar \
--Durl=http://jianzhao.org \
--DrepositoryId=releases
+    -DgroupId=org.jianzhao \
+    -DartifactId=j \
+    -Dversion=0.1 \
+    -Dpackaging=jar \
+    -Dfile=j.jar \
+    -Durl=http://jianzhao.org \
+    -DrepositoryId=releases
 ```

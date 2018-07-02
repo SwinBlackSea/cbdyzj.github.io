@@ -6,4 +6,3 @@ class PingController {
         return 'pong\n'
     }
 }
-
