@@ -1,19 +1,18 @@
 class Context {
+
     constructor(resolve, reject) {
-        Object.assign(this, {
-            _resolve: resolve,
-            _reject: reject
-        })
+        this.reject = reject
+        this.resolve = resolve
     }
 
     resolve(value) {
         this.value = value
-        this._resolve(this)
+        this.resolve(this)
     }
 
     reject(error) {
         this.error = error
-        this._reject(this)
+        this.reject(this)
     }
 }
 

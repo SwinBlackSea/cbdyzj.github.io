@@ -6,8 +6,8 @@ http.request({
     path: '/endpoint',
     method: 'post'
 }, res => {
-    var content = ''
-    res.on('data', chunk => content += chunk)
+    var buffer = ''
+    res.on('data', chunk => buffer += chunk)
     res.on('error', error => console.error(error))
-    res.on('end', () => console.log(content))
+    res.on('end', () => console.log(buffer))
 }).end()
