@@ -7,7 +7,7 @@
 
 - 证书标准，定义了证书中应该包含哪些内容。参考RFC5280
 
-### PEM
+### 证书格式
 
 - PEM：Privacy Enhanced Mail，BASE64编码
 - DER：Distinguished Encoding Rules，二进制编码
@@ -22,7 +22,7 @@ openssl x509 -in certificate.der -text -noout -inform der # DER
 
 - CRT：X.509证书，常见于*nix系统，往往是PEM编码
 - CER：X.509证书，常见于Windows系统，往往是DER编码
-- KEY：通常用来存放一个公钥或者私钥，并非X.509证书,编码同样的,可能是PEM,也可能是DER
+- KEY：通常用来存放一个公钥或者私钥，并非X.509证书，编码可能是PEM，也可能是DER
 
 ```sh
 # 查看KEY的信息
@@ -32,7 +32,7 @@ openssl rsa -in key.key -text -noout -inform der # DER
 openssl rsa -pubin -in key.der -inform der -out key.pem -outform pem
 ```
 
-- CSR：Certificate Signing Request，证书签名请求，并非证书。而是向权威证书颁发机构获得签名证书的申请。其核心内容是一个公钥等元数据。在生成这个申请的时候，同时也会生成一个私钥。
+- CSR：Certificate Signing Request，证书签名请求，并非证书。而是向权威证书颁发机构获得签名证书的申请。其核心内容是一个公钥等元数据。在生成这个申请的时候，同时也会生成一个私钥
 
 ```sh
 # 查看REQ的信息
