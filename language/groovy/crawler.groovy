@@ -1,4 +1,4 @@
-@Grab(group='org.jsoup', module='jsoup', version='1.10.1')
+@Grab('org.jsoup:jsoup:1.10.1')
 import org.jsoup.Jsoup
 
 Jsoup.connect('https://v2ex.com').get()
