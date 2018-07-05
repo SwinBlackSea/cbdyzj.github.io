@@ -1,7 +1,7 @@
 # OpenSSL
 
-> SSL - Secure Sockets Layer
-> TLS - Transport Layer Security Protocol
+> SSL - Secure Sockets Layer  
+> TLS - Transport Layer Security Protocol  
 
 ## X.509
 
