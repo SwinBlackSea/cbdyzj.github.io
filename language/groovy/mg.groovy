@@ -1,5 +1,8 @@
 @Grab('org.mybatis.generator:mybatis-generator-core:1.3.6')
 @Grab('javax.xml.bind:jaxb-api:2.3.0')
+import org.mybatis.generator.api.MyBatisGenerator
+import org.mybatis.generator.config.xml.ConfigurationParser
+import org.mybatis.generator.internal.DefaultShellCallback
 
 def xml = '''<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
