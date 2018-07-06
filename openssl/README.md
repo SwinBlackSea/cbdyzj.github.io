@@ -18,7 +18,7 @@ openssl x509 -in certificate.pem -text -noout # PEM
 openssl x509 -in certificate.der -text -noout -inform der # DER
 ```
 
-### 相关文件拓展名
+## 相关文件拓展名
 
 - CRT：X.509证书，常见于*nix系统，往往是PEM编码
 - CER：X.509证书，常见于Windows系统，往往是DER编码
