@@ -15,6 +15,14 @@ docker network create docker-network
 ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
 ```
 
+## Linux
+
+免root使用Docker
+
+```sh
+sudo usermod -aG docker $USER
+```
+
 ## Usage
 
 ```

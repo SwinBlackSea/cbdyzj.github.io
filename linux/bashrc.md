@@ -15,7 +15,6 @@ alias de='cd ~/Desktop'
 alias brew-up='brew update && brew upgrade && brew cleanup'
 alias tnpm='npm --registry=http://registry.npm.taobao.org'
 alias convert-gb='iconv -f gb18030'
-alias du0='du -hd0'
 ```
 
 ## .zshrc
