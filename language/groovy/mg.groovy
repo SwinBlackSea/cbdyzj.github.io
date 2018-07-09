@@ -15,16 +15,18 @@ def xml = '''<?xml version="1.0" encoding="UTF-8"?>
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/mysql?useSSL=false"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/mysql"
                         userId="root"
                         password="password">
+                <property name="useSSL" value="false"/>
+                <property name="useInformationSchema" value="true"/>
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="entity" targetProject="."/>
+        <javaModelGenerator targetPackage="entity" targetProject="./src/main/java"/>
 
-        <sqlMapGenerator targetPackage="mapper" targetProject="."/>
+        <javaClientGenerator type="mapper" targetPackage="mapper" targetProject="./src/main/java"/>
 
-        <javaClientGenerator type="mapper" targetPackage="mapper" targetProject="."/>
+        <sqlMapGenerator targetPackage="mapper" targetProject="./src/main/resources"/>
 
         <table schema="mysql"
                 tableName="user"
