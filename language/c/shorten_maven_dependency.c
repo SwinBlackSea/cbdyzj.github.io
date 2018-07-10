@@ -29,16 +29,16 @@ int main(int argc, char* argv[]) {
 bool match_gradle(const char* dep) {
     regex_t regex;
     char* pattern = "^compile group: '[a-z\\.]+', name: '[a-z-]+', version: '[0-9a-z\\.]+'$";
-    int regexInit = regcomp( &regex, pattern, REG_EXTENDED );
+    int regexInit = regcomp(&regex, pattern, REG_EXTENDED);
     if (!regexInit) {
-        int reti = regexec( &regex, dep, 0, NULL, 0 );
+        int reti = regexec(&regex, dep, 0, NULL, 0);
         if (!reti)
         {
-            regfree( &regex );
+            regfree(&regex);
             return TRUE;
         }
     }
-    regfree( &regex );
+    regfree(&regex);
     return FALSE;
 }
 

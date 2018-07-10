@@ -24,9 +24,9 @@ def xml = '''<?xml version="1.0" encoding="UTF-8"?>
 
         <javaModelGenerator targetPackage="entity" targetProject="./src/main/java"/>
 
-        <javaClientGenerator type="mapper" targetPackage="mapper" targetProject="./src/main/java"/>
-
         <sqlMapGenerator targetPackage="mapper" targetProject="./src/main/resources"/>
+
+        <javaClientGenerator type="mapper" targetPackage="mapper" targetProject="./src/main/java"/>
 
         <table schema="mysql"
                 tableName="user"
