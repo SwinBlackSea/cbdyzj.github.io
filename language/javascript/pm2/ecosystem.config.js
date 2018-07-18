@@ -7,8 +7,8 @@ module.exports = {
                 '-c',
                 'while true; do sleep 1; echo `date`; done;'
             ],
-            exec_interpreter: '',
-            exec_mode: 'fork'
+            cwd: '.',
+            interpreter: ''
         }
     ]
 }
