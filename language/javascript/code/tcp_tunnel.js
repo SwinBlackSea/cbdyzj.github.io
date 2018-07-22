@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const net = require('net')
 
 function tunntlTcp(host, port) {
