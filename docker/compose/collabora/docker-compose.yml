@@ -1,0 +1,17 @@
+version: '3'
+services:
+  collabora:
+    image: collabora/code
+    container_name: collabora
+    cap_add:
+      - MKNOD
+    ports:
+      - '9980:9980'
+    environment:
+      - domain=cloud\\.00010001\\.com
+      - username=root
+      - password=password
+networks:
+  default:
+    external:
+      name: docker-network
