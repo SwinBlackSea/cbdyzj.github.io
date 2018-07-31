@@ -132,7 +132,9 @@
 
 - 基于行的复制
 - 基于语句的复制（逻辑复制）
-- 分离在线事务处理（OLTP），在线数据分析（OLAP）
+- OLTP：在线事务处理
+- OLAP：在线数据分析
+- HTAP：Hybrid Transactional/Analytical Processing
 
 ## 拓展
 
