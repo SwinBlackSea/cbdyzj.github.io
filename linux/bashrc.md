@@ -15,18 +15,7 @@ alias de='cd ~/Desktop'
 alias brew-up='brew update && brew upgrade && brew cleanup'
 alias tnpm='npm --registry=http://registry.npm.taobao.org'
 alias convert-gb='iconv -f gb18030'
-```
-
-## .zshrc
-
-```sh
-# shell prompt
-PS1='%n@ %~ '$'\n''$ '
-
-# brew install zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# brew install zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+alias ss='proxy=http://127.0.0.1:1087 && export http_proxy=$proxy && export https_proxy=$proxy'
 ```
 
 ## .gitconfig
