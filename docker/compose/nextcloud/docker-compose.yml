@@ -4,9 +4,9 @@ services:
     image: nextcloud
     container_name: nextcloud
     ports:
-      - '7435:80'
+    - '7435:80'
     volumes:
-      - data:/var/www/html
+    - data:/var/www/html
 volumes:
   data:
 networks:

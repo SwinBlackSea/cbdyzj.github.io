@@ -4,60 +4,60 @@ services:
   redis:
     image: redis
     container_name: sentry-redis
-    networks: 
-      - network
+    networks:
+    - network
 
   postgres:
     image: postgres
     container_name: sentry-postgres
     environment:
-      - POSTGRES_USER:sentry
-      - POSTGRES_PASSWORD:sentry
+    - POSTGRES_USER:sentry
+    - POSTGRES_PASSWORD:sentry
     volumes:
-      - pg-data:/var/lib/postgresql/data:rw
+    - pg-data:/var/lib/postgresql/data:rw
     networks:
-      - network
+    - network
 
   sentry:
     image: sentry
     container_name: sentry
     ports:
-      - '5000:9000'
+    - '5000:9000'
     environment:
-      - SENTRY_REDIS_HOST=redis
-      - SENTRY_POSTGRES_HOST=postgres
-      - SENTRY_SECRET_KEY=${SECRET_KEY}
+    - SENTRY_REDIS_HOST=redis
+    - SENTRY_POSTGRES_HOST=postgres
+    - SENTRY_SECRET_KEY=${SECRET_KEY}
     depends_on:
-      - redis
-      - postgres
-    networks: 
-      - network
+    - redis
+    - postgres
+    networks:
+    - network
 
   sentry_celery_beat:
     image: sentry
     container_name: sentry-celery-beat
     depends_on:
-      - sentry
+    - sentry
     environment:
-      - SENTRY_REDIS_HOST=redis
-      - SENTRY_POSTGRES_HOST=postgres
-      - SENTRY_SECRET_KEY=${SECRET_KEY}
+    - SENTRY_REDIS_HOST=redis
+    - SENTRY_POSTGRES_HOST=postgres
+    - SENTRY_SECRET_KEY=${SECRET_KEY}
     command: "sentry run cron"
     networks:
-      - network
+    - network
 
   sentry_celery_worker:
     image: sentry
     container_name: sentry-celery-worker
     depends_on:
-      - sentry
+    - sentry
     environment:
-      - SENTRY_REDIS_HOST=redis
-      - SENTRY_POSTGRES_HOST=postgres
-      - SENTRY_SECRET_KEY=${SECRET_KEY}
+    - SENTRY_REDIS_HOST=redis
+    - SENTRY_POSTGRES_HOST=postgres
+    - SENTRY_SECRET_KEY=${SECRET_KEY}
     command: "sentry run worker"
     networks:
-      - network
+    - network
 
 volumes:
   pg-data:

@@ -4,9 +4,9 @@ services:
     image: nginx
     container_name: nginx
     ports:
-      - '8000:80'
+    - '8000:80'
     volumes:
-      - .:/usr/share/nginx/html:ro
+    - .:/usr/share/nginx/html:ro
 networks:
   default:
     external:

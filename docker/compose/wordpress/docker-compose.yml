@@ -4,7 +4,7 @@ services:
     image: wordpress
     container_name: wordpress
     ports:
-      - '8080:80'
+    - '8080:80'
     environment:
       WORDPRESS_DB_PASSWORD: password
 networks:

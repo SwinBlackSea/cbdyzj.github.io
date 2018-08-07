@@ -4,10 +4,10 @@ services:
     image: tomcat
     container_name: tomcat
     ports:
-      - '8000:8000'
+    - '8000:8000'
     volumes:
-      - ./webapps:/usr/local/tomcat/webapps
-      - ./server.xml:/usr/local/tomcat/conf/server.xml
+    - ./webapps:/usr/local/tomcat/webapps
+    - ./server.xml:/usr/local/tomcat/conf/server.xml
 networks:
   default:
     external:

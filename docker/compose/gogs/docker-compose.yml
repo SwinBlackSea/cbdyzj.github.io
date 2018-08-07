@@ -4,10 +4,10 @@ services:
     image: gogs/gogs
     container_name: gogs
     ports:
-      - '10080:3000'
-      - '10022:22'
+    - '10080:3000'
+    - '10022:22'
     volumes:
-      - data:/data
+    - data:/data
 volumes:
   data:
 networks:
