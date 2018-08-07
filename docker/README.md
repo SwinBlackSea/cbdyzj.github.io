@@ -35,6 +35,6 @@ https://download.docker.com/linux/centos/7/x86_64/stable/Packages
 
 ### Remove dangling images
 
-```
+```sh
 docker rmi $(docker images -qf dangling=true)
 ```
