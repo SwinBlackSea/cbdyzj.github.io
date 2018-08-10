@@ -1,4 +1,4 @@
-# Pacdoc生成ePub
+# Pandoc生成ePub
 
 - 实际书的来源格式是通常是markdown，如`分身.txt`
 - 在书的开头初添加元数据，比如使用`YAML metadata block`（如下）或者直接使用markdown的语法
