@@ -21,6 +21,8 @@ git reset --hard <commit> # 强制回滚
 git reset --hard HEAD~3 # 强制回滚三个版本
 git submodule add <ref> <dir> # 增加子模块
 git submodule update --init --recursive # 递归更新子模块
+git verify-pack -v .git/objects/pack/pack-*.idx | sort -k 3 -g | tail -5 # 搜索大文件
+git rev-list --objects --all | grep <hash> # 查看文件
 git filter-branch --tree-filter 'rm -f <filename>' # 过滤历史提交
 git subtree # 子树
 ```
