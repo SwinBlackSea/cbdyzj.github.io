@@ -8,9 +8,11 @@ nohup ./main >/dev/null 2>&1 &
 
 ## systemd
 
-- `main.service`
+- `systemd-run`
+- Unit file
 
 ```ini
+# /usr/lib/systemd/system/main.service
 [Unit]
 Description=Main service
                                                                                                                     
