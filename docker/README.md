@@ -35,5 +35,5 @@ https://download.docker.com/linux/centos/7/x86_64/stable/Packages
 
 ```sh
 docker rmi $(docker images -qf dangling=true) # Remove dangling images
-docker update restart=always rabbitmq # Update restart strategy
+docker update --restart=always rabbitmq # Update restart strategy
 ```
