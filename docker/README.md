@@ -33,8 +33,7 @@ https://download.docker.com/linux/centos/7/x86_64/stable/Packages
 
 ## Usage
 
-### Remove dangling images
-
 ```sh
-docker rmi $(docker images -qf dangling=true)
+docker rmi $(docker images -qf dangling=true) # Remove dangling images
+docker update restart=always rabbitmq # Update restart strategy
 ```
