@@ -1,15 +1,16 @@
 # Docker
 
-- Docker相关整理
-- 统一使用一个桥接网络
+## Usage
 
 ```sh
-docker network create docker-network
+docker network create docker-network # Using single network
+docker rmi $(docker images -qf dangling=true) # Remove dangling images
+docker update --restart=always rabbitmq # Update restart strategy
 ```
 
 ## MacOS
 
-- 如果使用Docker for Mac，可以通过下面的tty访问Linux虚拟机
+- Using Docker for Mac, Linux virtual machine tty
 
 ```
 ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
@@ -17,23 +18,18 @@ docker network create docker-network
 
 ## Linux
 
-免root使用Docker
+- Add user to docker group
+
 
 ```sh
 sudo usermod -aG docker $USER
 ```
 
-安装
+- Install
+
 
 ```
 https://docs.docker.com/install/linux/docker-ce/centos
 https://docs.docker.com/compose/install
 https://download.docker.com/linux/centos/7/x86_64/stable/Packages
-```
-
-## Usage
-
-```sh
-docker rmi $(docker images -qf dangling=true) # Remove dangling images
-docker update --restart=always rabbitmq # Update restart strategy
 ```
