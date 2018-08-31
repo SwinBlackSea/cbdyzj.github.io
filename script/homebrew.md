@@ -4,27 +4,40 @@
 #!/bin/sh
 
 # brew
-brew install node
-brew install tree
+alias bi='brew install'
+
+bi wget
+bi node
+bi tree
+bi maven
+bi pandoc
+bi groovy
+bi tomcat
 
 # brew cask
-brew cask install qq
-brew cask install java
-brew cask install iina
-brew cask install wechat
-brew cask install docker
-brew cask install typora
-brew cask install firefox
-brew cask install postman
-brew cask install qqmusic
-brew cask install dingtalk
-brew cask install telegram
-brew cask install webstorm
-brew cask install google-chrome
-brew cask install intellij-idea
-brew cask install shadowsocksx-ng
-brew cask install visual-studio-code
+alias bci='brew cask install'
+
+bci qq
+bci java
+bci iina
+bci marp
+bci wechat
+bci docker
+bci typora
+bci firefox
+bci postman
+bci qqmusic
+bci dingtalk
+bci telegram
+bci webstorm
+bci sourcetree
+bci google-chrome
+bci intellij-idea
+bci the-unarchiver
+bci shadowsocksx-ng
+bci visual-studio-code
+bci google-chrome-canary
 
 # clean
-brew cleanup && brew cask cleanup
+brew cleanup
 ```
