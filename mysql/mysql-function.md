@@ -81,7 +81,7 @@
   - DAYOFWEEK
   - DAYOFYEAR
 - FROM_DAYS
-- FROM_UNIXTIME：转换UNIX时间戳
+- FROM_UNIXTIME：转换Unix时间戳
 - GET_FORMAT：得到指定格式
 - HOUR：小时数
 - LAST_DAY：月份最后一天的日期

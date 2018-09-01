@@ -1,4 +1,4 @@
-# Cbdy's GitHub Pages
+# jianzhao.org
 
 - Index: jianzhao.org
 - Weibo: weibo.com/cbdyzj

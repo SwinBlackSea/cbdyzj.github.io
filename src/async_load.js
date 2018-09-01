@@ -3,36 +3,28 @@
  * http://jianzhao.org
  */
 
-const $ = document.querySelector.bind(document)
-
 class PageLoader {
 
     constructor() {
-        this.container = $('div.markdown-body')
+        this.container = document.querySelector('.markdown-body')
     }
 
     async load() {
-        if (location.hash === '') {
-            return await this.loadPage(`/blogs/目录`)
-        }
-        const path = location.hash.substring(2)
+        const path = location.hash.substring(2) || '/blogs/目录'
         return await this.loadPage(path)
     }
 
     async loadPage(path) {
         const title = path.split('/').pop()
-        this.setTitle(title)
+        document.title = title ? decodeURI(title) : '无可奉告'
+
         const response = await fetch(`${path}.md`)
         if (response.status !== 200) {
-            this.container.innerHTML = '<p>无可奉告！<p>'
+            this.container.innerHTML = '<p>无可奉告<p>'
             return
         }
         const content = await response.text()
         this.container.innerHTML = marked(content)
-    }
-
-    setTitle(title) {
-        document.title = title ? `复读机 - ${decodeURI(title)}` : '复读机'
     }
 }
 
