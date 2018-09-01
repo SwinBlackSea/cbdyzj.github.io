@@ -14,10 +14,10 @@
 ```sh
 mvn deploy:deploy-file \
     -DgroupId=org.jianzhao \
-    -DartifactId=j \
-    -Dversion=0.1 \
+    -DartifactId=artifact \
+    -Dversion=0.0.1 \
     -Dpackaging=jar \
-    -Dfile=j.jar \
-    -Durl=http://jianzhao.org \
+    -Dfile=artifact.jar \
+    -Durl=https://jianzhao.org \
     -DrepositoryId=releases
 ```
