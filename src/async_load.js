@@ -5,48 +5,41 @@
 
 const $ = document.querySelector.bind(document)
 
-class PagesLoader {
+class PageLoader {
 
     constructor() {
         this.container = $('div.markdown-body')
     }
 
-    async doLoad() {
+    async load() {
         if (location.hash === '') {
-            return await this.loadCatalog()
+            return await this.loadPage(`/blogs/目录`)
         }
-        const name = location.hash.substring(2)
-        return await this.loadArticle(name)
+        const path = location.hash.substring(2)
+        return await this.loadPage(path)
     }
 
-    async loadCatalog() {
-        await this.loadHtml([`/blogs/目录.md`])
-        const ul = $('ul')
-        for (const li of ul.children) {
-            const name = li.innerText
-            li.innerHTML = `<a href="/#/${name}">${name}<a>`
+    async loadPage(path) {
+        const title = path.split('/').pop()
+        this.setTitle(title)
+        const response = await fetch(`${path}.md`)
+        if (response.status !== 200) {
+            this.container.innerHTML = '<p>无可奉告！<p>'
+            return
         }
+        const content = await response.text()
+        this.container.innerHTML = marked(content)
     }
 
-    async loadArticle(name) {
-        await this.loadHtml([`/blogs/${name}.md`, `/notes/${name}.md`])
-    }
-
-    async loadHtml(paths) {
-        let response
-        for (const path of paths) {
-            response = await fetch(path)
-            if (response.status !== 404) { break }
-        }
-        const text = await response.text()
-        this.container.innerHTML = marked(text)
+    setTitle(title) {
+        document.title = title ? `复读机 - ${decodeURI(title)}` : '复读机'
     }
 }
 
 document.onreadystatechange = function () {
     if (document.readyState === 'interactive') {
-        const pagesLoader = new PagesLoader
-        addEventListener('popstate', () => pagesLoader.doLoad())
-        pagesLoader.doLoad()
+        const loader = new PageLoader
+        addEventListener('popstate', () => loader.load())
+        loader.load()
     }
 }
