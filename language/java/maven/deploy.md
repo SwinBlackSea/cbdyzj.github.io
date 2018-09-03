@@ -1,6 +1,6 @@
 # Maven Deploy
 
-- pom.xml
+## pom.xml
 
 ```xml
 <distributionManagement>
@@ -16,7 +16,7 @@
 </distributionManagement>
 ```
 
-- settings.xml
+## settings.xml
 
 ```xml
 <servers>
@@ -31,4 +31,17 @@
     <password>admin123</password>
     </server>
 </servers>
+```
+
+### Deploy
+
+```sh
+mvn deploy:deploy-file \
+    -DgroupId=org.jianzhao \
+    -DartifactId=artifact \
+    -Dversion=0.0.1 \
+    -Dpackaging=jar \
+    -Dfile=artifact.jar \
+    -DrepositoryId=default-nexus-release \
+    -Durl=https://nexus.jianzhao.org/nexus/content/repositories/releases/
 ```
