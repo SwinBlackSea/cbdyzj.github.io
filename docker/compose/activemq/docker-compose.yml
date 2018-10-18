@@ -10,6 +10,9 @@ services:
     - '8161:8161'
     - '61616:61616'
     - '61613:61613'
+    environment:
+    - ACTIVEMQ_ADMIN_LOGIN=root
+    - ACTIVEMQ_ADMIN_PASSWORD=password
 volumes:
   data:
   log:
