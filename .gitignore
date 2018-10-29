@@ -1,6 +1,7 @@
+node_modules/
+.idea/
+log/
 .DS_Store
-node_modules
-package-lock.json
 *.jar
 *.war
-log/
+package-lock.json
