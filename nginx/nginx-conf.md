@@ -67,7 +67,6 @@ location /foo {
 server {
     listen       443;
     server_name  server_name;
-    server_name  server_name;
 
     ssl on;
     ssl_certificate      server_name.crt;
