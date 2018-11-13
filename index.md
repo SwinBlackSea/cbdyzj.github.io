@@ -4,6 +4,7 @@
 
 - [JavaScript代码风格](#/blogs/JavaScript代码风格)
 - [一个数字游戏](#/blogs/一个数字游戏)
+- [写程序的套路](#/blogs/写程序的套路)
 - [小结](#/blogs/小结)
 - [想到](#/blogs/想到)
 - [教育改革](#/blogs/教育改革)
