@@ -30,7 +30,7 @@ const a = new A();
 console.log(a.x);
 ```
 
-一看看去稀松平常，有些人可能会说我们在[Babel](https://www.npmjs.com/package/babel-plugin-transform-class-properties)和[TypeScript](http://www.typescriptlang.org/docs/handbook/classes.html)中这样使用多年了。
+一眼看去稀松平常，有些人可能会说我们在[Babel](https://www.npmjs.com/package/babel-plugin-transform-class-properties)和[TypeScript](http://www.typescriptlang.org/docs/handbook/classes.html)中这样使用多年了。
 
 但有一件事值得注意：这个语法使用`[[Define]]`语义而不是我们习惯的`[[Set]]`语义。这意味着实际上上面的代码**不等价于**以下用法：
 
