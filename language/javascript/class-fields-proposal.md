@@ -1,4 +1,4 @@
-# “JavaScript的成员字段提案”或“TC39委员出了什么问题？”
+# “JavaScript的类字段提案”或“TC39委员出了什么问题？”
 
 译自：[“Class-fields-proposal” or “what went wrong in tc39 committee”](https://medium.com/@igorchulinda/class-fields-proposal-or-what-went-wrong-in-tc39-committee-6ce41efe291)
 
