@@ -40,7 +40,7 @@ const transaction = await db.transaction()  // good
 
 ## 对象
 
-- 实例化对象时，使用`new`关键词，尽管有的时候`new`可以省略
+- 实例化对象时，使用`new`关键词，尽管有的时候`new`可以省略（`Symbol`除外）
 
 ```Javascript
 const error = Error('错误信息')      // bad
@@ -52,7 +52,7 @@ const regExp = new RegExp('foo')   // good
 
 ## 模块
 
-- 尽量使用ECMAScript 6的模块化方案
+- 尽量使用ECMAScript 2015的模块化方案
 
 ## 分号
 
@@ -111,7 +111,7 @@ const bar = foo || ''
 const bar = Number(foo)
 
 // 转成整数
-const bar =  foo | 0 // 注意，位运算会使foo会被转化成32为整数处理
+const bar =  foo | 0 // 注意，位运算会使foo会被转化成32位整数处理
 const bar = parseInt(foo, 10)
 
 // 转成字符串
