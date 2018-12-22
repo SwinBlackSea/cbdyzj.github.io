@@ -1,6 +1,9 @@
 # Shell
 
-> Shell Command Language
+- Shell Command Language
+- Where there is a shell, there is a way
+
+## 语法
 
 - 设置变量
   - 只读：readonly

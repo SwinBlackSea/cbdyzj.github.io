@@ -1,19 +1,35 @@
 - 建库，删库
 
 ```mysql
-CREATE DATABASE test_db CHARACTER SET utf8mb4;
+CREATE DATABASE IF NOT EXISTS test_db CHARACTER SET utf8mb4;
 DROP DATABASE test_db;
 ```
 
 - 建表，删表
 
 ```mysql
-CREATE TABLE test_table (
-  column1 INT,
-  column2 INT
+CREATE TABLE IF NOT EXISTS test_table
+(
+  id         INT PRIMARY KEY AUTO_INCREMENT,
+  column1    INT,
+  column2    INT,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-DROP TABLE test_table;
+DROP TABLE IF EXISTS test_table;
+```
+
+- 表结构
+
+```mysql
+-- 建表语句
+SHOW CREATE table test_table;
+-- 查看列
+DESC test_table;
+SHOW FULL COLUMNS FROM test_table;
+-- 查看索引
+SHOW INDEX FROM test_table;
 ```
 
 - 增，删，改，查
