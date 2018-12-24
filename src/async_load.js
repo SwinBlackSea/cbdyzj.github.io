@@ -6,11 +6,10 @@
 const navigator = {
     getContainer: () => document.querySelector('.markdown-body'),
     async navigate() {
-        const path = location.hash.substring(2) || '/index'
-        const title = path.split('/').pop()
+        const path = location.hash.substring(2)
+        const title = path ? path.split('/').pop() : '微小的工作'
         document.title = title ? decodeURI(title) : '无可奉告'
-
-        const response = await fetch(`${path}.md`)
+        const response = await fetch(`${path || '/index'}.md`)
         if (response.status !== 200) {
             this.getContainer().innerHTML = '<p>无可奉告<p>'
             return
