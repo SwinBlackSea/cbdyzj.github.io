@@ -2,7 +2,7 @@
 
 ```mysql
 CREATE DATABASE IF NOT EXISTS test_db CHARACTER SET utf8mb4;
-DROP DATABASE test_db;
+DROP DATABASE IF EXISTS test_db;
 ```
 
 - 建表，删表
@@ -17,18 +17,18 @@ CREATE TABLE IF NOT EXISTS test_table
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS test_table2 LIKE test_table;
+
 DROP TABLE IF EXISTS test_table;
 ```
 
 - 表结构
 
 ```mysql
--- 建表语句
 SHOW CREATE table test_table;
--- 查看列
 DESC test_table;
 SHOW FULL COLUMNS FROM test_table;
--- 查看索引
+
 SHOW INDEX FROM test_table;
 ```
 
@@ -47,7 +47,11 @@ WHERE column1 = 2；
 
 SELECT * FROM test_table;
 
-TRUNCATE TABLE test_table; 
+TRUNCATE TABLE test_table;
+
+INSERT test_table2 (column1, column2)
+SELECT column1,column2
+FROM test_table;
 ```
 
 - 数据类型
