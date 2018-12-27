@@ -35,8 +35,10 @@ SHOW INDEX FROM test_table;
 - 增，删，改，查
 
 ```mysql
-INSERT test_table (column1, column2) VALUE (1, 2);
-INSERT test_table (column1, column2) VALUES (2, 3), (4, 5);
+INSERT INTO test_table (column1, column2) VALUE (1, 2);
+INSERT INTO test_table (column1, column2) VALUES (2, 3), (4, 5);
+
+REPLACE INTO test_table (id, column1, column2) VALUE (1, 1, 2);
 
 DELETE FROM test_table
 WHERE column1 = 1;
@@ -49,7 +51,7 @@ SELECT * FROM test_table;
 
 TRUNCATE TABLE test_table;
 
-INSERT test_table2 (column1, column2)
+INSERT INTO test_table2 (column1, column2)
 SELECT column1,column2
 FROM test_table;
 ```
