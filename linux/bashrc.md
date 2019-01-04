@@ -11,7 +11,7 @@ alias grep='grep --color'
 alias tree='tree -N'
 alias de='cd ~/Desktop'
 alias convert-gb='iconv -f gb18030'
-alias ss='proxy=http://127.0.0.1:1087 && export http_proxy=$proxy && export https_proxy=$proxy'
+alias ss='SS_PROXY=http://127.0.0.1:1087 && export http_proxy=$SS_PROXY && export https_proxy=$SS_PROXY'
 ```
 
 ## .gitconfig
