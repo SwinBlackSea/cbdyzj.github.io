@@ -28,3 +28,8 @@
 
 17. `DisposableBean#destroy`
 14. Bean的`destroyMethod`方法
+
+#### 更多钩子
+
+- Lifecycle
+- SmartLifecycle
