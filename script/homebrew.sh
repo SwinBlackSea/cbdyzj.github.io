@@ -1,6 +1,3 @@
-# Homebrew
-
-```sh
 #!/bin/sh
 
 # brew
@@ -36,4 +33,3 @@ brew cask install google-chrome-canary
 
 # clean
 brew cleanup
-```
