@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS test_table;
 - 表结构
 
 ```mysql
-SHOW CREATE table test_table;
+SHOW CREATE TABLE test_table;
 DESC test_table;
 SHOW FULL COLUMNS FROM test_table;
 
