@@ -55,11 +55,6 @@
 - 5.7（2015）：安全性，性能等改进，新增JSON支持，新增generate column支持
 - 8（2018）：支持文档存储，默认utf8mb4编码，JSON增强，CTEs（Common Table Expresssions，公共表格表达式），窗口函数，降序索引，更好的优化器消费模型，MySQL服务器组件，GIS（Geographic Information System，地理信息系统）提升，InnoDB引擎NO WAIT与SKIP LOCKED选项
 
-作者：请叫我王蜀黍
-链接：https://juejin.im/post/5b88adf46fb9a019f709c0d0
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 ## MySQL性能
 
 - sysbench
