@@ -81,3 +81,13 @@ server {
     }
 }
 ```
+
+### Single page application
+
+```nginx
+location / {
+    root   /path/to/static/;
+    index  index.html;
+    try_files $uri $uri/ /index.html;
+}
+```
