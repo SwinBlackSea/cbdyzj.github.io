@@ -82,7 +82,7 @@ server {
 }
 ```
 
-### Single page application
+### Single-page application
 
 ```nginx
 location / {
