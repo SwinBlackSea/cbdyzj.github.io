@@ -16,7 +16,9 @@ M:1
 
 JVM规范里没有规定的。
 
-Java SE最常用的JVM是Oracle/Sun研发的HotSpot VM。在这个JVM的较新版本（[自Java 1.3起](https://stackoverflow.com/questions/5713142/green-threads-vs-non-green-threads)）所支持的所有平台上，它都是使用1:1线程模型的——除了Solaris之外，它是个特例。
+Java SE最常用的JVM是Oracle/Sun研发的HotSpot VM。在这个JVM的较新版本所支持的所有平台上，它都是使用1:1线程模型的——除了Solaris之外，它是个特例。
+
+参考：[RednaxelaFX的回答](https://www.zhihu.com/question/23096638/answer/29617153)
 
 ### POSIX线程
 
