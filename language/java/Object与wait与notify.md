@@ -33,4 +33,4 @@ synchronized(o) {
 }
 ```
 
-这就是聪明反被聪明误，`synchronized`看起来引入的麻烦比解决的问题多，还很难拓展。最后还是把显式的锁（如ReentrantLock）加入Java。
+这就是聪明反被聪明误，`synchronized`看起来引入的麻烦比解决的问题多，还很难拓展。最后还是把显式的锁（如ReentrantLock）加入Java了。
