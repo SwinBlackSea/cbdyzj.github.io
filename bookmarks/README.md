@@ -3,7 +3,7 @@
 ## 阅读
 
 - [爱思想](http://www.aisixiang.com/)
-- [引新](http://www.importnew.com/)
+- [ImportNew](http://www.importnew.com/)
 - [并发编程网](http://ifeve.com/)
 
 ## 文章
