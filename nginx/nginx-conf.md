@@ -91,3 +91,29 @@ location / {
     try_files $uri $uri/ /index.html;
 }
 ```
+
+### upstream
+
+```nginx
+# 轮询
+upstream api1 {
+    server server1;
+    server server2;
+    server server3;
+}
+
+# 权重
+upstream api2 {
+    server server1 weight=1;
+    server server2 weight=2;
+    server server3 weight=3;
+}
+
+# IP Hash
+upstream api3 {
+    ip_hash;
+    server server1;
+    server server2;
+    server server3;
+}
+```
