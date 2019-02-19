@@ -1,6 +1,6 @@
 # jQuery
 
-###  Selector
+## Selector
 
 use ',' to merge selection
 
@@ -36,15 +36,15 @@ prev ~ siblings
 :button    :file
 ```
 
-##  Function
+## Function
 
 ```javascript
 $([selector,[context]])
-$(callback) //$(document).ready(callback)
+$(callback) // $(document).ready(callback)
 
 var o = $(selector)
 
-//method
+// method
 o.each();     o.map();         o.size();
 o.length;     o.selector;      o.context;
 o.get();      o.index();       o.eq();
@@ -97,7 +97,7 @@ o.mouseenter(); o.mouseleaver(); o.mousemove(); o.mouseout();
 o.mouseover();  o.mouseup();     o.resize();    o.sroll();
 o.select();     o.submit();      o.unload()
 
-//ajax
+// ajax
 $.load();  $.get();  $.post();  $.ajax();
 $.getJSON()
 $.getScript()
@@ -105,7 +105,7 @@ $.getScript()
 $.ajaxPrefilter()
 $.ajaxSetup()
 
-//dom op
+// dom op
 o.append();      o.prepend();
 o.appendTo();    o.prependTo();
 o.before();      o.after();
