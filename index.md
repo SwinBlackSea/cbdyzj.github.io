@@ -1,7 +1,5 @@
 # 微小的工作
 
-## Blogs
-
 - [JavaScript代码风格](#/blogs/JavaScript代码风格)
 - [一个数字游戏](#/blogs/一个数字游戏)
 - [写程序的套路](#/blogs/写程序的套路)
@@ -10,9 +8,10 @@
 - [想到](#/blogs/想到)
 - [教育改革](#/blogs/教育改革)
 - [逮虾户](#/blogs/逮虾户)
+- [Object与wait与notify](#/language/java/Object与wait与notify)
 - [中文编程的合理性](https://www.v2ex.com/t/503918)
 
-## Excerpt
+---
 
 - [一只兔子在山洞口写论文](#/excerpt/一只兔子在山洞口写论文)
 - [一本好书](#/excerpt/一本好书)
@@ -25,7 +24,7 @@
 - [甜甜圈哲学](#/excerpt/甜甜圈哲学)
 - [计算机程序的构造和解释](#/excerpt/计算机程序的构造和解释)
 
-## Notes
+---
 
 - [书单0](#/notes/书单0)
 - [书单1](#/notes/书单1)
