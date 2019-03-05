@@ -7,7 +7,7 @@
 - 循环等待资源
 - 不能抢占
 
-### 并发级别
+## 并发级别
 
 - 阻塞（Blocking）：资源锁
 - 无饥饿（Starvation-Free）：公平锁
@@ -15,12 +15,12 @@
 - 无锁（Lock-Free）：重复尝试
 - 无等待（Wait-Free）：
 
-### 两个定律
+## 两个定律
 
 - Amdahl定律
 - Gustafson定律
 
-### Java内存模型（JMM）
+## Java内存模型（JMM）
 
 - 原子性（Atomicity）：原子操作
 - 可见性（Visibility）：
@@ -35,7 +35,7 @@
   - 线程的中断（interrupt()）先于被中断的代码
   - 对象的构造函数执行、结束先于finalize()方法（finalize()，Java9开始废弃）
 
-### 线程
+## 线程
 
 - 线程状态
 
@@ -57,7 +57,7 @@ public enum State {
 - TIMED_WAITING：有时间限制等待
 - TERMINATED：终结
 
-#### 相关方法
+### 相关方法
 
 - start()：启动线程
 - stop()：暴力终止（Java1.2开始废弃）
@@ -76,13 +76,13 @@ public enum State {
   - join()：本质是让调用线程wait()在当前线程实例上
   - yeild()：让出CPU
 
-#### volatile
+### volatile
 
 - 可见性
 - 有序性
 - 不能替代锁，无法保证符合操作原子性
 
-#### 线程相关
+### 线程相关
 
 - 线程组（ThreadGroup）
   - activeCount()：活动线程估计
@@ -98,7 +98,7 @@ public enum State {
   - 保证线程安全，可见性，有序性
 
 
-### 并发包
+## 并发包
 
 - 重入锁（ReentrantLock）
   - Condition
@@ -122,7 +122,7 @@ public enum State {
   - ConcurrentSkipListMap
   - Collections包装线程安全的集合
 
-### 锁的优化及注意事项
+## 锁的优化及注意事项
 
 - 减少锁持有时间
 - 减少锁颗粒度
@@ -130,18 +130,18 @@ public enum State {
 - 锁分离
 - 锁粗化
 
-#### Java虚拟机的锁优化
+### Java虚拟机的锁优化
 
 - 锁偏向
 - 轻量级锁
 - 自旋锁
 - 锁消除
 
-#### ThreadLocal
+### ThreadLocal
 
 - 线程变量
 
-### 比较交换（CAS）
+## 比较交换（CAS）
 
 - atomic包：内置使用CAS操作的线程安全的类型
   - AtomicInteger
@@ -152,7 +152,7 @@ public enum State {
   - AtomicIntegerFieldUpdater
 - SynchronousQueue
 
-### 并行模式与算法
+## 并行模式与算法
 
 - 单例模式
 - 不变模式
@@ -161,7 +161,7 @@ public enum State {
 - Future模式
 - 网络NOI，AIO
 
-### Java8与并发
+## Java8与并发
 
 - Lambda表达式
 - CompletableFuture
@@ -171,6 +171,6 @@ public enum State {
   - LongAddr
   - LongAccumulator
 
-### Akka
+## Akka
 
 - Actor模型
