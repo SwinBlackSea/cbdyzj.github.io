@@ -1,3 +1,11 @@
+## 数据区
+
+- 程序计数器(Program Counter Register)
+- Java栈(VM Stack)
+- 本地方法栈(Native Method Stack)
+- 方法区(Method Area)
+- 堆(Heap)
+
 ## 垃圾回收
 
 - 分代
