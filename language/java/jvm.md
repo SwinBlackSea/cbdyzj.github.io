@@ -28,7 +28,16 @@
 
 ## 类加载
 
-- Bootstrap ClassLoader
-- Extension ClassLoader
-- Application ClassLoader
+### Java 8
+
+- Bootstrap class loader
+- Extension class loader
+- Application class loader
+- 自定义类加载器
+
+### Java 9+
+
+- Bootstrap class loader
+- Platform class loader
+- System class loader
 - 自定义类加载器
