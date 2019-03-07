@@ -1,9 +1,7 @@
 # Regular Expression
 
 - 符号
-- 析取
-- 合取
-- 克林闭包
+- 选择、连接、闭包（柯林闭包，Kleene Closure）
 
 ## 取后缀
 
