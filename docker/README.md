@@ -2,7 +2,13 @@
 
 ## How
 
-- AUFS：A kind of Union File System
+- Layer storage
+  - Device Mapper
+  - AUFS
+  - ZFS
+  - Btrfs
+  - Overlay
+  - VFS
 - Linux CGroup
 - Linux Namespace
   - Mount
