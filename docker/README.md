@@ -1,5 +1,17 @@
 # Docker
 
+## How
+
+- AUFS：A kind of Union File System
+- Linux CGroup
+- Linux Namespace
+  - Mount
+  - UTS
+  - IPC
+  - PID
+  - Network
+  - User
+
 ## Usage
 
 ```sh
