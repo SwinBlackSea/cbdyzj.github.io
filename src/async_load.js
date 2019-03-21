@@ -9,7 +9,7 @@ const navigator = {
         const path = location.hash.substring(2)
         const title = path ? path.split('/').pop() : '微小的工作'
         document.title = title ? decodeURI(title) : '无可奉告'
-        const response = await fetch(`${path || '/index'}.md`)
+        const response = await fetch(`${path || '/README'}.md`)
         if (response.status !== 200) {
             this.getContainer().innerHTML = '<p>无可奉告<p>'
             return
