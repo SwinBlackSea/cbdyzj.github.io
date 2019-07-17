@@ -1,0 +1,35 @@
+# 标准与软件
+
+- OpenAPI
+- msgpack
+- Apache Hive
+- HBase
+- Elasticsearch
+- MongoDB
+- OpenTSDB
+- HDFS
+- Neo4j
+- Filebeat
+- netdata
+- zabbix
+- Open-Falcon
+- datadog
+- updown.io
+- NodeQuery
+- fluentd
+- filebrowser
+- jenkins
+- openstack
+- haproxy
+- lvs
+- ansible
+- saltstack
+- puppet
+- cobber
+- redmine
+- Unbound
+- dnsmasq
+- MaraDNS
+- PowerDNS
+- Proof Search
+- CPS：Parser Combinator
