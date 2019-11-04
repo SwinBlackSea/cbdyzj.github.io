@@ -26,3 +26,21 @@ PS1="%n@%m:%~${ZSH_PROMPT_NEWLINE}$ "
 ```
 
 至于oh-my-zsh，之后再研究吧
+
+## Homebrew安装Java后无法运行
+
+A solution, not sure if that's the only solution & the better one, is to run
+
+```
+sudo spctl --master-disable
+```
+
+Then run your app (validation will be kept by macOS Gatekeeper)
+
+and right after that re-enable Gatekeeper with
+
+```
+sudo spctl --master-enable
+```
+
+This last step is important to keep you Mac safe :)
