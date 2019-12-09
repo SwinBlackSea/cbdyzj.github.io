@@ -34,3 +34,4 @@
 - Proof Search
 - CPS：Parser Combinator
 - Infrastructure as code
+- 变更数据捕获（change data capture, CDC）
