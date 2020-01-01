@@ -7,7 +7,7 @@ body {
 }
 
 .markdown-body {
-    margin: 10px 0;
+    margin: 10px 0 30px 0;
     width: 85%;
     max-width: 50rem;
     font-size: 19px;
