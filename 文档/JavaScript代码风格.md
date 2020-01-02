@@ -54,7 +54,7 @@ const regExp = new RegExp('foo')   // good
 
 ## 分号
 
-- 注意JavaScript分号ASI的坑，加不加按照团队风格决定
+- 注意JavaScript分号[ASI](https://github.com/cbdyzj/lib17/blob/master/javascript/javascript-asi.md)的坑，加不加按照团队风格决定
 
 ## 缩进
 

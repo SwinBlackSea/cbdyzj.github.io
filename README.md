@@ -12,3 +12,7 @@
 ## 文章
 
 - [2019总结](https://jianzhao.org/#/文档/2019总结)
+- [逮虾户](https://jianzhao.org/#/文档/逮虾户)
+- [写程序的套路](https://jianzhao.org/#/文档/写程序的套路)
+- [JavaScript代码风格](https://jianzhao.org/#/文档/JavaScript代码风格)
+- [教育改革](https://jianzhao.org/#/文档/教育改革)
